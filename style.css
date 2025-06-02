@@ -10,6 +10,7 @@ body {
 nav {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 1em;
+  margin-bottom: 2em;
 }
 
 .tabs {
@@ -41,9 +42,10 @@ nav {
 main {
   padding: 2em;
   max-width: 800px;
-  margin: auto;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
+  margin: 4em auto;
+  border-radius: 12px;
+  background: linear-gradient(to bottom, #1c1f2b, #2d3342); /* dark blue-gray to slightly brighter */
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
   transition: opacity 0.5s ease;
 }
 
