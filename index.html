@@ -1,7 +1,53 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Name – Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <nav>
+    <ul class="tabs">
+      <li onclick="showSection('projects')" id="tab-projects" class="active">Projects</li>
+      <li onclick="showSection('about')" id="tab-about">About</li>
+      <li onclick="showSection('contact')" id="tab-contact">Contact</li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="projects" class="content-section">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <strong>My Big Game Project</strong><br>
+          Multiplayer roguelike using Unity and C#. <br>
+          <a href="https://github.com/yourusername/big-game">View on GitHub</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="about" class="content-section hidden">
+      <h2>About Me</h2>
+      <p>Computer Science graduate with a passion for game development and software engineering.</p>
+      <ul class="timeline">
+        <li><strong>2023–2025:</strong> Contributed to large-scale game project (Unity, C#)</li>
+        <li><strong>2019–2023:</strong> B.S. in Computer Science</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="content-section hidden">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/yourprofile">LinkedIn</a></li>
+        <li><a href="https://github.com/yourusername">GitHub</a></li>
+        <li><a href="https://www.youtube.com/yourchannel">YouTube</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
